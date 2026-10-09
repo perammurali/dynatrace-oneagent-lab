@@ -15,3 +15,10 @@ variable "instance_type" {
   type        = string
   default     = "t3.micro"
 }
+
+variable "ami_id" {
+  description = "Amazon Linux 2023 AMI"
+  type        = string
+
+  default = "ami-0f58b397bc5c1f2e8"
+}
