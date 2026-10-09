@@ -1,5 +1,9 @@
 #!/bin/bash
 
-echo "Verifying OneAgent status"
+echo "Checking OneAgent..."
 
-sudo systemctl status oneagent || true
+systemctl status oneagent --no-pager
+
+echo "Checking OneAgent processes..."
+
+ps -ef | grep oneagent
