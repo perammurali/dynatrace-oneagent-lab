@@ -1,4 +1,7 @@
-output "lab_name" {
-  description = "Terraform Learning Lab"
-  value       = "Dynatrace OneAgent Lab"
+output "instance_name" {
+  value = var.instance_name
+}
+
+output "instance_type" {
+  value = var.instance_type
 }
